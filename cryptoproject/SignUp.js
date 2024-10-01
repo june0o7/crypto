@@ -72,7 +72,7 @@ function SignUp(props) {
             try{
 
 
-              const userCredential= await createUserWithEmailAndPassword(auth, email, password);
+              const userCredential= await createUserWithEmailAndPassword(auth, email.trim(), password);
               const uid=userCredential.user.uid;
 
               console.log(uid);

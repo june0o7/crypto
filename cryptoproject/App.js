@@ -7,13 +7,29 @@ import { createStackNavigator } from '@react-navigation/stack';
 import SignUp from './SignUp';
 import Home from './Home';
 import MyComponent from './MyComponant';
+import { Firestore } from 'firebase/firestore';
+import { createUserWithEmailAndPassword } from 'firebase/auth';
 
 
 
 export default function App() {
 
-
+  
   const stack=createStackNavigator();
+  // const db = get(Firestore);
+  // try{
+  //   const credentials = await createUserWithEmailAndPassword(auth, email.trim(), password);
+  //   const uid = credentials.user.uid;
+  //   const docref=doc(db,"users",uid);
+  //   const document={
+  //     email : email,
+  //     password : password
+  //   };
+  //   await setDoc(docref,document);
+  //   console.log("data is uploaded");
+  // }catch(error){
+  //   console.log(error);
+  // }
 
  
   return (
